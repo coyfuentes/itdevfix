@@ -90,7 +90,8 @@
 
             <div class="hidden lg:flex items-center gap-10 font-bold text-slate-500 tracking-tight text-sm uppercase">
                 <a href="#problem" class="hover:text-slate-900 transition-colors">Risk Audit</a>
-                <a href="#solution" class="hover:text-slate-900 transition-colors">Recovery Path</a>
+                <a href="#services" class="hover:text-slate-900 transition-colors">Services</a>
+                <a href="#how-it-works" class="hover:text-slate-900 transition-colors">Process</a>
                 <a href="#contact" class="hover:text-slate-900 transition-colors">Triage</a>
                 <button class="bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-bold hover:bg-slate-800 transition-all">
                     URGENT SUPPORT
@@ -163,20 +164,22 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-24 items-center">
                 <div>
-                    <h2 class="text-sm font-bold text-[#74D04E] uppercase tracking-[0.3em] mb-4">Risk Profile</h2>
+                    <h2 class="text-sm font-bold text-[#74D04E] uppercase tracking-[0.3em] mb-4">Core Challenges</h2>
                     <h3 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-8 leading-tight">
-                        The Post-AI <br />Complexity Wall
+                        Critical Failures in <br />AI-Generated Infrastructure
                     </h3>
                     <p class="text-slate-500 text-lg font-medium mb-10 leading-relaxed">
-                        Prompt-based code is fast to build but impossible to maintain. When the "vibe" fades, technical debt accrues at an exponential rate.
+                        Artificial intelligence creates code at lightning speed, but it lacks the context of a long-term architectural vision. This leads to two fatal flaws:
                     </p>
-                    <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm">
-                        <div class="flex items-center gap-4 mb-4 text-red-500 font-bold uppercase text-xs tracking-widest">
-                            <i class="fas fa-bolt"></i> Urgent Warning
+                    <div class="space-y-6">
+                        <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm border-l-4 border-l-red-500">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">Errors You Don't Understand</h4>
+                            <p class="text-slate-500 text-sm">Obscure console errors and recursive logic loops that the AI can no longer solve through simple prompting.</p>
                         </div>
-                        <p class="text-xl font-bold text-slate-900 italic leading-snug">
-                            "Everything stops when your AI logic hits a wall it wasn't prompted to understand."
-                        </p>
+                        <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm border-l-4 border-l-red-500">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">Messy Code Structure</h4>
+                            <p class="text-slate-500 text-sm">A "spaghetti" foundation of disconnected components that makes scaling or adding simple features impossible.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="grid sm:grid-cols-2 gap-6">
@@ -213,67 +216,190 @@
         </div>
     </section>
 
-    <!-- Form Section (Contact/Triage) -->
-    <section id="contact" class="py-32 px-6 bg-white border-t border-slate-100">
+    <!-- Solution Section -->
+    <section id="solution" class="py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-sm font-bold text-[#74D04E] uppercase tracking-[0.3em] mb-4">The Solution</h2>
+            <h3 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-16">Architectural Recovery</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group p-10 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl hover:border-[#74D04E]/30">
+                    <div class="mb-8 text-[#74D04E] text-4xl"><i class="fas fa-microscope"></i></div>
+                    <h4 class="text-xl font-bold mb-4">Deep Debugging</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">We trace hallucinations to their source, fixing the logical root rather than applying prompt-bandages.</p>
+                </div>
+                <div class="group p-10 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl hover:border-[#74D04E]/30">
+                    <div class="mb-8 text-[#74D04E] text-4xl"><i class="fas fa-broom"></i></div>
+                    <h4 class="text-xl font-bold mb-4">Code Cleaning</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Transforming messy, redundant AI output into lean, documented, and professional codebases.</p>
+                </div>
+                <div class="group p-10 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl hover:border-[#74D04E]/30">
+                    <div class="mb-8 text-[#74D04E] text-4xl"><i class="fas fa-user-shield"></i></div>
+                    <h4 class="text-xl font-bold mb-4">Ongoing Support</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Dedicated engineering hours to ensure your site remains stable as you continue to evolve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 px-6 bg-slate-900 text-white rounded-[3rem] mx-6">
         <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-24 items-start">
+            <div class="flex flex-col lg:flex-row justify-between items-end mb-20 gap-8">
+                <div class="max-w-2xl">
+                    <h2 class="text-sm font-bold text-[#74D04E] uppercase tracking-[0.3em] mb-4">Capabilities</h2>
+                    <h3 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Rescue Services</h3>
+                    <p class="text-slate-400 text-lg">Targeted interventions for high-stakes digital infrastructure.</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="px-6 py-3 rounded-full border border-slate-700 text-xs font-bold uppercase tracking-widest">SLA Guaranteed</div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
                 <div>
-                    <h2 class="text-4xl font-extrabold tracking-tight text-slate-900 mb-6">Immediate Triage</h2>
-                    <p class="text-slate-500 text-lg mb-10 leading-relaxed">
-                        Provide your details below for an emergency architectural audit. Our senior engineers respond to critical stability requests within 60 minutes.
-                    </p>
-                    <div class="space-y-6">
-                        <div class="flex gap-5">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#74D04E]/10 flex items-center justify-center text-[#74D04E]">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div>
-                                <h5 class="font-bold text-slate-900">Direct Rescue Line</h5>
-                                <p class="text-slate-500 text-sm">+1 (888) DEV-FIX-NOW</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-5">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-500">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h5 class="font-bold text-slate-900">Priority Dispatch</h5>
-                                <p class="text-slate-500 text-sm">emergency@itdevfix.com</p>
-                            </div>
-                        </div>
+                    <div class="text-3xl font-bold text-[#74D04E] mb-6">01</div>
+                    <h4 class="text-xl font-bold mb-4">Emergency Bug Fixes</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Solving critical production crashes caused by logic hallucinations and unhandled edge cases.</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-[#74D04E] mb-6">02</div>
+                    <h4 class="text-xl font-bold mb-4">API & Integration Failures</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Re-wiring broken external connections where AI failed to handle complex authentication or rate limits.</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-[#74D04E] mb-6">03</div>
+                    <h4 class="text-xl font-bold mb-4">Full Code Cleanup</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Modularizing monolithic AI files into professional architectures that standard developers can actually read.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-sm font-bold text-[#74D04E] uppercase tracking-[0.3em] mb-4">Process</h2>
+                <h3 class="text-4xl font-extrabold text-slate-900">How We Fix Your Stack</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-0 relative">
+                <!-- Progress Line -->
+                <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-slate-100 z-0"></div>
+                
+                <div class="relative z-10 p-8 text-center">
+                    <div class="w-24 h-24 rounded-2xl bg-white border-2 border-slate-100 flex items-center justify-center text-2xl font-black text-slate-900 mx-auto mb-8 shadow-sm">1</div>
+                    <h4 class="text-lg font-bold mb-3">Submit</h4>
+                    <p class="text-slate-500 text-sm">Provide your codebase or URL for immediate technical triage and access assessment.</p>
+                </div>
+                <div class="relative z-10 p-8 text-center">
+                    <div class="w-24 h-24 rounded-2xl bg-[#74D04E] flex items-center justify-center text-2xl font-black text-slate-900 mx-auto mb-8 shadow-lg shadow-[#74D04E]/20">2</div>
+                    <h4 class="text-lg font-bold mb-3">Diagnose & Fix</h4>
+                    <p class="text-slate-500 text-sm">Our engineers identify logical debt and refactor critical path code within hours.</p>
+                </div>
+                <div class="relative z-10 p-8 text-center">
+                    <div class="w-24 h-24 rounded-2xl bg-white border-2 border-slate-100 flex items-center justify-center text-2xl font-black text-slate-900 mx-auto mb-8 shadow-sm">3</div>
+                    <h4 class="text-lg font-bold mb-3">Maintain</h4>
+                    <p class="text-slate-500 text-sm">Receive a stabilized build and optional monitoring to prevent future complexity walls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-32 px-6 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[#74D04E] shadow-sm border border-slate-100">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Specialized AI Knowledge</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">We understand how common LLMs output code, allowing us to find "hidden" logic gaps faster than traditional devs.</p>
                     </div>
                 </div>
-                
-                <div class="bg-slate-50 p-10 rounded-3xl border border-slate-200">
-                    <form onsubmit="event.preventDefault(); alert('Audit Request Received. Stand by for triage.');">
-                        <div class="grid md:grid-cols-2 gap-6 mb-6">
-                            <div>
-                                <label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Full Name</label>
-                                <input type="text" placeholder="John Doe" class="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#74D04E] transition-all text-sm font-medium" required>
-                            </div>
-                            <div>
-                                <label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Email Address</label>
-                                <input type="email" placeholder="john@enterprise.com" class="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#74D04E] transition-all text-sm font-medium" required>
-                            </div>
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[#74D04E] shadow-sm border border-slate-100">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Fast Turnaround</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">Emergency repairs typically completed same-day to ensure your business stays online.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[#74D04E] shadow-sm border border-slate-100">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Business Continuity</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">Stop the "re-prompting" loop. Get a permanent fix that allows your business to function reliably.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section (Contact/Triage) -->
+    <section id="contact" class="py-32 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold tracking-tight text-slate-900 mb-4">Request Emergency Fix</h2>
+                <p class="text-slate-500 font-medium">Our senior engineers respond to critical stability requests within 60 minutes.</p>
+            </div>
+            
+            <div class="bg-slate-50 p-10 rounded-3xl border border-slate-200 shadow-sm mb-16">
+                <form onsubmit="event.preventDefault(); alert('Audit Request Received. Stand by for triage.');">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Full Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#74D04E] transition-all text-sm font-medium" required>
                         </div>
-                        <div class="mb-8">
-                            <label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Critical Issue Description</label>
-                            <textarea rows="4" placeholder="Describe the logic ceiling or hallucination being encountered..." class="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#74D04E] transition-all text-sm font-medium resize-none" required></textarea>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Email Address</label>
+                            <input type="email" placeholder="john@enterprise.com" class="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#74D04E] transition-all text-sm font-medium" required>
                         </div>
-                        <button type="submit" class="w-full btn-primary text-slate-900 py-4 rounded-xl font-bold text-lg">
-                            Request Audit Protocol
-                        </button>
-                        <p class="text-center mt-5 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                            <i class="fas fa-lock mr-2"></i> Secured Enterprise Submission
-                        </p>
-                    </form>
+                    </div>
+                    <div class="mb-8">
+                        <label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Critical Issue Description</label>
+                        <textarea rows="4" placeholder="Describe the logic ceiling or hallucination being encountered..." class="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#74D04E] transition-all text-sm font-medium resize-none" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary text-slate-900 py-4 rounded-xl font-bold text-lg">
+                        Request Audit Protocol
+                    </button>
+                    <p class="text-center mt-5 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                        <i class="fas fa-lock mr-2"></i> Secured Enterprise Submission
+                    </p>
+                </form>
+            </div>
+
+            <!-- Triage Details Moved Below Form -->
+            <div class="grid md:grid-cols-2 gap-8 border-t border-slate-100 pt-16">
+                <div class="flex gap-5">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#74D04E]/10 flex items-center justify-center text-[#74D04E]">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-slate-900">Direct Rescue Line</h5>
+                        <p class="text-slate-500 text-sm font-mono">+1 (888) DEV-FIX-NOW</p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-500">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-slate-900">Priority Dispatch</h5>
+                        <p class="text-slate-500 text-sm font-mono">emergency@itdevfix.com</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-20 px-6 bg-slate-900 text-slate-500 border-t border-slate-800">
+    <footer class="py-20 px-6 bg-slate-900 text-slate-500">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
             <div class="flex items-center gap-2.5 opacity-80">
                 <div class="bg-white/10 w-8 h-8 rounded-lg flex items-center justify-center">
