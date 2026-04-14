@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT DevFix | AI-Rescue Operations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
+        :root {
+            --brand-green: #74D04E;
+            --emergency-red: #EF4444;
+            --slate-900: #0F172A;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .bg-cubes {
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+            background-attachment: fixed;
+        }
+
+        .brutal-shadow {
+            box-shadow: 8px 8px 0px 0px var(--slate-900);
+        }
+
+        .brutal-shadow:hover {
+            transform: translate(4px, -4px);
+            box-shadow: 12px 12px 0px 0px var(--slate-900);
+        }
+
+        .brutal-shadow:active {
+            transform: translate(0px, 0px);
+            box-shadow: none;
+        }
+
+        @keyframes loading-bar {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .animate-loading {
+            animation: loading-bar 2s ease-in-out infinite;
+        }
+
+        .nav-scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+
+        .emergency-btn-shadow {
+            box-shadow: 10px 10px 0px 0px var(--emergency-red);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-6 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-2 group cursor-pointer">
+                <div class="bg-[#74D04E] w-10 h-10 rounded flex items-center justify-center brutal-shadow-sm group-hover:shadow-[#74D04E]/40 transition-shadow">
+                    <span class="text-slate-900 font-black text-lg leading-none">IT</span>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-slate-900 uppercase">
+                    Dev<span class="text-[#74D04E]">Fix</span>
+                </span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 font-semibold text-slate-600 tracking-tight uppercase text-xs">
+                <a href="#problem" class="hover:text-[#74D04E] transition-colors">Technical Debt</a>
+                <a href="#solution" class="hover:text-[#74D04E] transition-colors">The Recovery</a>
+                <a href="#process" class="hover:text-[#74D04E] transition-colors">Workflow</a>
+                <button class="bg-slate-900 text-[#74D04E] px-4 py-2 rounded text-xs font-bold hover:bg-slate-800 transition-all border border-slate-700">
+                    EMERGENCY SUPPORT
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-32 text-center bg-cubes px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-md bg-red-50 text-red-600 text-xs font-black mb-8 animate-pulse border border-red-100 uppercase tracking-widest">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>Status: Critical Technical Debt Detected</span>
+            </div>
+            
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-slate-900">
+                YOUR AI-BUILT WEBSITE WORKS... <br />
+                <span class="text-[#74D04E] underline decoration-slate-900 underline-offset-8">UNTIL IT DOESN'T.</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-slate-500 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
+                The "vibe-code" era is over. When the prompts stop working and your users start leaving, 
+                you don't need another prompt. You need <span class="text-slate-900 font-bold italic underline">professional recovery.</span>
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <button class="brutal-shadow bg-[#74D04E] text-slate-900 px-10 py-5 rounded-none font-black text-xl uppercase tracking-tighter transition-all">
+                    <span class="flex items-center gap-3">
+                        Fix My Website Now <i class="fas fa-arrow-right"></i>
+                    </span>
+                </button>
+                <button class="text-slate-900 font-bold uppercase tracking-widest text-sm border-b-2 border-slate-900 hover:text-[#74D04E] hover:border-[#74D04E] transition-all">
+                    See the Recovery Blueprint
+                </button>
+            </div>
+
+            <!-- Diagnostic Visualizer -->
+            <div class="mt-20 max-w-5xl mx-auto">
+                <div class="bg-slate-900 rounded-lg shadow-2xl border border-slate-700 overflow-hidden text-left">
+                    <div class="bg-slate-800 px-4 py-3 flex justify-between items-center border-b border-slate-700">
+                        <div class="flex gap-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-[#74D04E]"></div>
+                        </div>
+                        <div class="text-[10px] font-mono text-slate-400 uppercase tracking-[0.2em]">RecoveryManager.java — Diagnostic</div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                            <span class="text-[10px] text-red-400 font-bold uppercase">Critical Halt</span>
+                        </div>
+                    </div>
+                    <div id="terminal" class="p-8 font-mono text-sm min-h-[200px]">
+                        <div class="text-slate-500 mb-2">// Initializing Java Virtual Machine for Code Audit...</div>
+                        <div class="text-[#74D04E] mb-1">public class RecoveryEngine {</div>
+                        <div class="text-slate-300 pl-4">public static void main(String[] args) {</div>
+                        <div class="text-red-400 pl-8 bg-red-400/10 mb-1">[ERROR] java.lang.NullPointerException at ai.vibe.code.VibeLogic.execute()</div>
+                        <div class="text-yellow-400 pl-8 mb-4">[WARN] Logic Hallucination detected in PromptBuffer[2048]</div>
+                        <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-[#74D04E] h-full w-[65%] animate-loading"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-24 px-6 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-4">
+                <h2 class="text-4xl font-black uppercase tracking-tighter mb-6 leading-tight">
+                    The Vibe-Code <br /><span class="text-red-600">Collapse</span>
+                </h2>
+                <p class="text-slate-600 font-medium mb-8">
+                    AI gets you to 1.0 in a weekend. But without professional architecture, the very foundation you built on is a ticking time bomb.
+                </p>
+                <div class="bg-red-600 text-white p-6">
+                    <p class="text-sm font-black uppercase tracking-widest mb-2 flex items-center gap-2">
+                        <i class="fas fa-fire"></i> The Tipping Point
+                    </p>
+                    <p class="text-xl font-bold leading-snug">
+                        "👉 Everything stops when the first major bug hits the AI's logic ceiling."
+                    </p>
+                </div>
+            </div>
+            <div class="lg:col-span-8 grid md:grid-cols-2 gap-8">
+                <!-- Problem Cards -->
+                <div class="bg-white p-6 border-l-4 border-red-500 shadow-sm">
+                    <i class="fas fa-bug text-red-500 mb-4 text-2xl"></i>
+                    <h3 class="text-lg font-black uppercase tracking-tight mb-2">Recursive Regressions</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Fixing one prompt-based bug triggers three new ones in unrelated components.</p>
+                </div>
+                <div class="bg-white p-6 border-l-4 border-red-500 shadow-sm">
+                    <i class="fas fa-shield-alt text-red-500 mb-4 text-2xl"></i>
+                    <h3 class="text-lg font-black uppercase tracking-tight mb-2">Ghost Dependencies</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Your site relies on hallucinated or deprecated libraries that can't be updated.</p>
+                </div>
+                <div class="bg-white p-6 border-l-4 border-red-500 shadow-sm">
+                    <i class="fas fa-chart-line text-red-500 mb-4 text-2xl"></i>
+                    <h3 class="text-lg font-black uppercase tracking-tight mb-2">Performance Decay</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Bloated DOM structures and unoptimized loops slow your site to a crawl.</p>
+                </div>
+                <div class="bg-white p-6 border-l-4 border-red-500 shadow-sm">
+                    <i class="fas fa-lock text-red-500 mb-4 text-2xl"></i>
+                    <h3 class="text-lg font-black uppercase tracking-tight mb-2">Security Voids</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">No proper sanitization or auth logic, leaving user data exposed to basic injections.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6">
+                    Structural <span class="text-[#74D04E]">Re-Engineering</span>
+                </h2>
+                <p class="text-slate-500 font-medium text-lg">
+                    We don't just patch. We excavate the debt and replace it with high-availability, production-grade systems.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-0 border border-slate-200">
+                <div class="p-10 border-r border-slate-200">
+                    <h3 class="text-2xl font-black uppercase mb-8">Code Forensic</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 font-bold text-sm tracking-tight"><i class="fas fa-check-circle text-[#74D04E]"></i> Dependency Audit</li>
+                        <li class="flex items-center gap-3 font-bold text-sm tracking-tight"><i class="fas fa-check-circle text-[#74D04E]"></i> Hallucination Check</li>
+                        <li class="flex items-center gap-3 font-bold text-sm tracking-tight"><i class="fas fa-check-circle text-[#74D04E]"></i> Logic Tracing</li>
+                    </ul>
+                </div>
+                <div class="p-10 border-r border-slate-200 bg-slate-900 text-white">
+                    <h3 class="text-2xl font-black uppercase mb-8">Hardening</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 font-bold text-sm tracking-tight"><i class="fas fa-check-circle text-[#74D04E]"></i> TypeScript Migration</li>
+                        <li class="flex items-center gap-3 font-bold text-sm tracking-tight"><i class="fas fa-check-circle text-[#74D04E]"></i> State Management Fix</li>
+                        <li class="flex items-center gap-3 font-bold text-sm tracking-tight"><i class="fas fa-check-circle text-[#74D04E]"></i> Security Patching</li>
+                    </ul>
+                </div>
+                <div class="p-10">
+                    <h3 class="text-2xl font-black uppercase mb-8">Maintenance</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 font-bold text-sm tracking-tight"><i class="fas fa-check-circle text-[#74D04E]"></i> Error Tracking</li>
+                        <li class="flex items-center gap-3 font-bold text-sm tracking-tight"><i class="fas fa-check-circle text-[#74D04E]"></i> Load Balancing</li>
+                        <li class="flex items-center gap-3 font-bold text-sm tracking-tight"><i class="fas fa-check-circle text-[#74D04E]"></i> Scale Readiness</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="bg-slate-900 text-white py-32 overflow-hidden relative px-6">
+        <div class="absolute top-0 right-0 p-20 opacity-10 pointer-events-none">
+            <i class="fas fa-tools text-[400px]"></i>
+        </div>
+        <div class="relative z-10 text-center max-w-7xl mx-auto">
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-8">
+                Stop the <span class="text-red-500">Bleeding.</span>
+            </h2>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-12">
+                Every day you wait is another day your technical debt accrues interest. 
+                Secure your infrastructure before it's too late.
+            </p>
+            <button class="bg-[#74D04E] text-slate-900 px-12 py-6 rounded-none font-black text-2xl uppercase tracking-tighter hover:bg-white transition-all emergency-btn-shadow">
+                Begin Emergency Audit
+            </button>
+            <p class="mt-8 text-slate-500 text-xs font-bold tracking-widest uppercase font-mono">
+                // Estimated Response: System.out.println("54 Minutes");
+            </p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        /* Emergency Audit Visualizer Logic 
+           Simulating a Java-based diagnostic thread
+        */
+        const terminal = document.getElementById('terminal');
+        const logs = [
+            { type: 'info', text: 'Thread[Recovery-0] started: java.io.FileSystem audit' },
+            { type: 'error', text: 'FATAL: ai.hallucination.VibeException: Logic depth exceeded' },
+            { type: 'warn', text: 'Memory Leak detected in VibeBuffer.java:42' },
+            { type: 'system', text: 'System.gc() called. Reclaiming leaked resources...' },
+            { type: 'brand', text: 'IT DevFix: Recovery Protocol Injected successfully.' }
+        ];
+
+        let index = 0;
+        function updateTerminal() {
+            if (index < logs.length) {
+                const div = document.createElement('div');
+                div.className = 'mt-1 opacity-0 transition-opacity duration-500';
+                
+                const log = logs[index];
+                if (log.type === 'error') div.classList.add('text-red-400');
+                if (log.type === 'warn') div.classList.add('text-yellow-400');
+                if (log.type === 'brand') div.classList.add('text-[#74D04E]', 'font-bold');
+                if (log.type === 'info' || log.type === 'system') div.classList.add('text-slate-500');
+                
+                div.textContent = `[${new Date().toLocaleTimeString()}] ${log.text}`;
+                terminal.prepend(div);
+                
+                setTimeout(() => div.classList.replace('opacity-0', 'opacity-100'), 50);
+                index++;
+                setTimeout(updateTerminal, 2500);
+            }
+        }
+
+        window.onload = updateTerminal;
+    </script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</body>
+</html>
